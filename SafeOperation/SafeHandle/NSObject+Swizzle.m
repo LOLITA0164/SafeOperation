@@ -93,20 +93,11 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self swizzleMethod:@selector(objectAtIndex_safe:) tarClass:@"__NSArrayM" tarSel:@selector(objectAtIndex:)];
         [self swizzleMethod:@selector(addObject_safe:) tarClass:@"__NSArrayM" tarSel:@selector(addObject:)];
         [self swizzleMethod:@selector(insertObject_safe:atIndex:) tarClass:@"__NSArrayM" tarSel:@selector(insertObject:atIndex:)];
         [self swizzleMethod:@selector(removeObjectAtIndex_safe:) tarClass:@"__NSArrayM" tarSel:@selector(removeObjectAtIndex:)];
         [self swizzleMethod:@selector(replaceObjectAtIndex_safe:withObject:) tarClass:@"__NSArrayM" tarSel:@selector(replaceObjectAtIndex:withObject:)];
     });
-}
-
-- (id)objectAtIndex_safe:(NSUInteger)index{
-    if (index >= self.count) {
-        NSAssertTip(@"数组越界");
-        return nil;
-    }
-    return [self objectAtIndex_safe:index];
 }
 
 - (void)addObject_safe:(id)anObject {

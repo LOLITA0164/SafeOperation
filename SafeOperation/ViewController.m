@@ -20,9 +20,13 @@
     
     NSString *string = nil;
     
-    NSDictionary *dic = @{
-                          @"key":string
-                          };
+//    NSDictionary *dic = @{
+//                          @"key":string
+//                          };
+    
+    NSMutableArray *array = [NSMutableArray array];
+    [array addObject:@""];
+    array[1];
     
 }
 
