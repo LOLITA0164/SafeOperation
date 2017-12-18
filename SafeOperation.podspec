@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name  		= 'SafeOperation'
-  s.version		= '1.0.1'
+  s.version		= '1.0.2'
   s.summary		= 'SafeOperation,操作安全'
   s.homepage 		= 'https://github.com/LOLITA0164/SafeOperation'
   s.license		= 'Copyright © 2017年 LOLITA. All rights reserved.SafeOperation'
