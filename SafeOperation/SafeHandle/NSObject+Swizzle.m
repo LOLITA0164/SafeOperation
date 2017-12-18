@@ -8,7 +8,6 @@
 
 #define NSAssertTip(tip) NSAssert(NO, tip)
 
-
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 @implementation NSObject (Swizzle)
@@ -177,16 +176,6 @@
     return self;
 }
 @end
-
-
-
-
-
-
-
-
-
-
 
 
 

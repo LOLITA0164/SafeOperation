@@ -18,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *string = nil;
+    
+    NSDictionary *dic = @{
+                          @"key":string
+                          };
     
 }
 

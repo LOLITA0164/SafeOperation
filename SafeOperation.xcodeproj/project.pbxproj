@@ -15,7 +15,7 @@
 		D333DC061FE5468D0015B606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D333DC041FE5468D0015B606 /* LaunchScreen.storyboard */; };
 		D37772ED1FE56B960019AD2B /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37772EC1FE56B960019AD2B /* NextViewController.m */; };
 		D37772F51FE56ED50019AD2B /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D37772F31FE56ED50019AD2B /* NSObject+Swizzle.m */; };
-		D37772F61FE56ED50019AD2B /* NSObject+SwizzleMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = D37772F41FE56ED50019AD2B /* NSObject+SwizzleMRC.m */; };
+		D37772F61FE56ED50019AD2B /* NSObject+SwizzleMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = D37772F41FE56ED50019AD2B /* NSObject+SwizzleMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
